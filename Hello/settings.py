@@ -28,7 +28,7 @@ SECRET_KEY = 'django-insecure-0owy1lca+m9si*%a7xfwrygvi7y27dq*%mz(yk29!5h%fit9e$
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['himcream.herokuapp.com']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -77,23 +77,14 @@ WSGI_APPLICATION = 'Hello.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
-#     }
-# }
-
 DATABASES = {
-    'default' : {
-        'ENGINE' : 'django.db.backends.postgresql_psycopg2',
-        'NAME' : 'd5f0t7fo6ckr01',
-        'USER' : 'mjuumlddinjvgz',
-        'PASSWORD' : '60eb34117722df40cbff78600b0a8c90b811908d7529712fa4c3be06a74b76f4',
-        'HOST' : 'ec2-54-152-185-191.compute-1.amazonaws.com',
-        'PORT' : '5432',
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+
+
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
 
